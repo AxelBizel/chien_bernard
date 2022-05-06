@@ -1,11 +1,11 @@
 import React from "react";
 import NavbarComponent from "./Components/NavbarComponent";
 import Header from "./Components/Header";
-import Stack from "./Components/Stack";
+import Media from "./Components/Media";
 import Footer from "./Components/Footer";
-import ExperienceTimeline from "./Components/ExperienceTimeline";
-import Projets from "./Components/Projets";
-import FormationTimeline from "./Components/FormationTimeline";
+import Bio from "./Components/Bio";
+import Music from "./Components/Music";
+import Video from "./Components/Video";
 import AOS from "aos";
 import "./Stylesheets/main.scss";
 
@@ -17,17 +17,17 @@ function App() {
         <Header />
       </section>
       <NavbarComponent />
-      <section id="experience" className="section">
-        <ExperienceTimeline />
+      <section id="bio" className="section">
+        <Bio />
       </section>
-      <section id="projets" className="section">
-        <Projets />
+      <section id="music" className="section">
+        <Music />
       </section>
-      <section id="formation" className="section">
-        <FormationTimeline />
+      <section id="video" className="section">
+        <Video />
       </section>
-      <section id="stack" className="section">
-        <Stack />
+      <section id="media" className="section">
+        <Media />
       </section>
       <section id="footer">
         <Footer />
