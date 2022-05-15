@@ -13,17 +13,27 @@ const Music = () => {
 
   return (
     <Container>
+      <div data-aos="zoom-in">
+        <h2 className="section-titles">Music</h2>
+      </div>
       <Row>
-        <div data-aos="zoom-in">
-          <h2 className="section-titles">Music</h2>
-        </div>
-      </Row>
-      <Row>
+        <Col xs="12" lg="6">
+          <div style={{ marginRight: "10px" }}>
+            <p>
+              Enregistré live, mixé et masterisé par Cédric Lerges au Studio
+              Laforge.
+            </p>
+            <p>
+              <p>Sortie le 10 mars 2022</p>
+            </p>
+          </div>
+        </Col>
+
         <Col xs="12" lg="6">
           <div>
             <iframe
               title="Bandcamp"
-              style={{ border: 0, width: "475px", height: "475px" }}
+              style={{ border: 0, width: "100%", height: "475px" }}
               src="https://bandcamp.com/EmbeddedPlayer/album=2078108374/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/"
               seamless
             >
@@ -31,11 +41,6 @@ const Music = () => {
                 Felindra by Chien Bernard
               </a>
             </iframe>
-          </div>
-        </Col>
-        <Col xs="12" lg="6">
-          <div>
-            <p>Bla</p>
           </div>
         </Col>
       </Row>

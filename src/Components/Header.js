@@ -1,11 +1,5 @@
 import React from "react";
 import GIF from "../Images/header.gif";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCode,
-  faPenFancy,
-  faChartArea,
-} from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col } from "reactstrap";
 
 const Header = () => {

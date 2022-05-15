@@ -9,8 +9,8 @@ const Video = () => {
       </div>
       <div className="videoWrapper">
         <iframe
-          width="560"
-          height="315"
+          width="100%"
+          height="400"
           src="https://www.youtube.com/embed/0KvVHwsWh8A"
           title="YouTube video player"
           frameborder="0"

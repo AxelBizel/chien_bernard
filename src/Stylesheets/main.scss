@@ -21,7 +21,7 @@ html {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 920px !important;
 }
 
 .section {
@@ -37,23 +37,24 @@ html {
   text-align: center;
   padding: 7vh 5vw 3vh 5vw;
   text-transform: uppercase;
+  font-weight: 600;
   margin: 2vh 0;
-}
-
-p,
-ul,
-li {
-  font-family: "Roboto Mono", monospace;
 }
 
 ul{
   padding-left: 20px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", sans-serif;
+
+body {
+  font-family: 'Quicksand', sans-serif !important;
 }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: "Quicksand", sans-serif;
+// }
+

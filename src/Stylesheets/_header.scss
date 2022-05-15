@@ -37,15 +37,16 @@
       display: flex;
       
       img {
-        height: 80vh;
+        height: 90vh;
         margin: 0 auto;
         @media (max-width: 600px) {
-          height: 200px;
+          height: auto;
+          width:100%;
           margin: 5vh auto;
         }
-        @media (min-width: 600px) {
-          margin-left: 5vw;
-        }
+        // @media (min-width: 600px) {
+        //   margin-left: 5vw;
+        // }
       }
     }
   }
