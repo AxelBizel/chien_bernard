@@ -75,8 +75,8 @@ const Music = () => {
             <iframe
               title="Bandcamp"
               style={{
-                width: "350px",
-                height: "350px",
+                width: isMobile ? "320px" : "350px",
+                height: isMobile ? "320px" : "350px",
                 border: 0,
               }}
               src="https://bandcamp.com/EmbeddedPlayer/album=2078108374/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/"
@@ -87,11 +87,7 @@ const Music = () => {
               </a>
             </iframe>
           </div>
-          {/* <div style={{ width: "350px", margin: "auto", marginTop: "20px" }}>
-            <p>
-              <b>Streaming</b>
-            </p>
-          </div> */}
+
           <div
             id="streaming"
             style={{
@@ -99,7 +95,7 @@ const Music = () => {
               flexDirection: "row",
               justifyContent: "space-between",
               marginVertical: "2vh",
-              width: "350px",
+              width: isMobile ? "320px" : "350px",
               margin: "auto",
             }}
           >

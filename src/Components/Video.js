@@ -17,8 +17,8 @@ const Video = () => {
       </div>
       <div className="videoWrapper" data-aos="fade-in">
         <iframe
-          width={isMobile ? 350 : "100%"}
-          height={isMobile ? 250 : 500}
+          width={isMobile ? 320 : "100%"}
+          height={isMobile ? 240 : 500}
           src="https://www.youtube.com/embed/0KvVHwsWh8A"
           title="YouTube video player"
           frameborder="0"
