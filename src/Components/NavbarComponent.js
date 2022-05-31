@@ -13,7 +13,6 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 const NavbarComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
 
   return (
@@ -24,16 +23,15 @@ const NavbarComponent = () => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <ul>
-              <NavItem>
-                <li>
-                  <NavLink href="#bio">Bio</NavLink>
-                </li>
-              </NavItem>
-            </ul>
+          <Nav className="mr-auto" navbar onClick={toggle}>
+            <NavItem>
+              <NavLink href="#bio">Bio</NavLink>
+            </NavItem>
             <NavItem>
               <NavLink href="#music">Music</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#concerts">Concerts</NavLink>
             </NavItem>
 
             <NavItem>
@@ -45,7 +43,7 @@ const NavbarComponent = () => {
             </NavItem>
 
             <NavItem>
-              <NavLink href="#footer">Contact</NavLink>
+              <NavLink href="#contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

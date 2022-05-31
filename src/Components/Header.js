@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="header">
       <Container>
-        <div className="header-contents" data-aos="zoom-in">
+        <div className="header-contents" data-aos="fade-in">
           <Row className="justify-content-between">
             <Col xs="12">
               <div className="header-img">

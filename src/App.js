@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import Bio from "./Components/Bio";
 import Music from "./Components/Music";
 import Video from "./Components/Video";
+import Gigs from "./Components/Gigs";
 import AOS from "aos";
 import "./Stylesheets/main.scss";
 
@@ -23,13 +24,16 @@ function App() {
       <section id="music" className="section">
         <Music />
       </section>
+      <section id="concerts" className="section">
+        <Gigs />
+      </section>
       <section id="video" className="section">
         <Video />
       </section>
       <section id="media" className="section">
         <Media />
       </section>
-      <section id="footer">
+      <section id="contact">
         <Footer />
       </section>
     </div>

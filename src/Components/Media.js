@@ -35,7 +35,7 @@ const Media = () => {
       linkDescription: "Écouter",
     },
     {
-      name: "🇺🇸 The Absolute Worst Show",
+      name: "🇺🇸 Absolute Worst Show",
       date: "Mars 2022",
       img: `${AWS}`,
       link: "https://www.mixcloud.com/TheAbsoluteWorstShow/the-absolute-worst-show-episode-064",
@@ -84,7 +84,7 @@ const Media = () => {
 
   return (
     <Container>
-      <div data-aos="zoom-in">
+      <div data-aos="fade-in">
         <h2 className="section-titles">Media</h2>
       </div>
 

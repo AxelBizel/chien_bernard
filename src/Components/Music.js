@@ -22,101 +22,61 @@ const Music = () => {
 
   return (
     <Container>
-      <div data-aos="zoom-in">
+      <div data-aos="fade-in">
         <h2 className="section-titles">Music</h2>
       </div>
-      <Row style={{ marginTop: "2vh" }}>
-        <Col xs="12" lg="6">
-          <div style={{ marginRight: "10px" }}>
-            <p>
-              <b>Tracklist</b>
-            </p>
-            <ul style={{ listStyle: "none" }} title="Tracklist">
-              <li>1.Baballen</li>
-              <li>2.Piston</li>
-              <li>3.Felindra</li>
-              <li>4.Uretrite</li>
-              <li>5.Come to Aldi</li>
-              <li>6.La Famille Leroy</li>
-              <li>7.Du lard</li>
-              <li>8.Jean-Vincent Placé</li>
-              <li>9.Flamenclek part.1</li>
-              <li>10.Flamenclek part.2</li>
-            </ul>
-
-            <p>
-              Enregistré live, mixé et masterisé par Cédric Lerges au Studio
-              Laforge. Sortie le 10 mars 2022.
-            </p>
-          </div>
+      <Row style={{ marginVertical: "2vh" }}>
+        <Col xs="12" lg="6" data-aos="fade-right">
           <div
-            id="streaming"
             style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-evenly",
-              marginVertical: "2vh",
+              marginRight: "30px",
+              width: "350px",
+              margin: "auto",
             }}
           >
-            <a
-              href="https://drive.google.com/file/d/1OuOgL5KrWRYz6cnjxi-4mJ33jrf9BYZ4/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Bandcamp"
-            >
-              <FontAwesomeIcon className="brand-logo" icon={faBandcamp} />
-            </a>
-
-            <a
-              href="https://drive.google.com/file/d/1OuOgL5KrWRYz6cnjxi-4mJ33jrf9BYZ4/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Spotify"
-            >
-              <FontAwesomeIcon className="brand-logo" icon={faSpotify} />
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1OuOgL5KrWRYz6cnjxi-4mJ33jrf9BYZ4/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Deezer"
-            >
-              <FontAwesomeIcon className="brand-logo" icon={faDeezer} />
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1OuOgL5KrWRYz6cnjxi-4mJ33jrf9BYZ4/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Youtube"
-            >
-              <FontAwesomeIcon className="brand-logo" icon={faYoutube} />
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1OuOgL5KrWRYz6cnjxi-4mJ33jrf9BYZ4/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Apple"
-            >
-              <FontAwesomeIcon className="brand-logo" icon={faApple} />
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1OuOgL5KrWRYz6cnjxi-4mJ33jrf9BYZ4/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              alt="Amazon"
-            >
-              <FontAwesomeIcon className="brand-logo" icon={faAmazon} />
-            </a>
+            <p>
+              <b>Crédits</b>
+              <ul style={{ listStyle: "none" }} title="Crédits">
+                <li>Sortie le 10 mars 2022.</li>
+                <li>
+                  Enregistré live, mixé et masterisé <br />
+                  par Cédric Lerges au Studio Laforge.
+                </li>
+                <li>Artwork by Aurélien Bartolucci</li>
+                <li>Music by Chien Bernard</li>
+              </ul>
+            </p>
+            <p>
+              <b>Tracklist</b>
+              <ul style={{ listStyle: "decimal" }} title="Tracklist">
+                <li>Baballen</li>
+                <li>Piston</li>
+                <li>Felindra</li>
+                <li>Uretrite</li>
+                <li>Come to Aldi</li>
+                <li>La Famille Leroy</li>
+                <li>Du lard</li>
+                <li>Jean-Vincent Placé</li>
+                <li>Flamenclek part.1</li>
+                <li>Flamenclek part.2</li>
+              </ul>
+            </p>
           </div>
         </Col>
 
-        <Col xs="12" lg="6">
-          <div>
+        <Col xs="12" lg="6" data-aos="fade-left">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: "30px",
+            }}
+          >
             <iframe
               title="Bandcamp"
               style={{
-                width: isMobile ? "350px" : "450px",
-                height: isMobile ? "350px" : "450px",
+                width: "350px",
+                height: "350px",
                 border: 0,
               }}
               src="https://bandcamp.com/EmbeddedPlayer/album=2078108374/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/"
@@ -126,6 +86,71 @@ const Music = () => {
                 Felindra by Chien Bernard
               </a>
             </iframe>
+          </div>
+          {/* <div style={{ width: "350px", margin: "auto", marginTop: "20px" }}>
+            <p>
+              <b>Streaming</b>
+            </p>
+          </div> */}
+          <div
+            id="streaming"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              marginVertical: "2vh",
+              width: "350px",
+              margin: "auto",
+            }}
+          >
+            <a
+              href="https://chienbernard.bandcamp.com/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Bandcamp"
+            >
+              <FontAwesomeIcon className="brand-logo" icon={faBandcamp} />
+            </a>
+            <a
+              href="https://open.spotify.com/album/4AlKAkdIRUEBr1IAPPdSMe"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Spotify"
+            >
+              <FontAwesomeIcon className="brand-logo" icon={faSpotify} />
+            </a>
+            <a
+              href="https://www.deezer.com/album/301614027"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Deezer"
+            >
+              <FontAwesomeIcon className="brand-logo" icon={faDeezer} />
+            </a>
+            <a
+              href="https://www.youtube.com/playlist?list=OLAK5uy_koVXXa8DANuIkiD6DX2ds2gNNHa37WZWI"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Youtube"
+            >
+              <FontAwesomeIcon className="brand-logo" icon={faYoutube} />
+            </a>
+            <a
+              href="https://music.apple.com/us/album/felindra/1613247957?uo=4&app=music"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Apple"
+            >
+              <FontAwesomeIcon className="brand-logo" icon={faApple} />
+            </a>
+            <a
+              href="https://www.amazon.fr/music/player/albums/B09V2MHVQN"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="Amazon"
+            >
+              <FontAwesomeIcon className="brand-logo" icon={faAmazon} />
+            </a>
           </div>
         </Col>
       </Row>

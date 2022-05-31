@@ -25,17 +25,19 @@ html {
 }
 
 .section {
-  padding: 5vh 0;
-  min-height: 92vh;
+  padding:2vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  @media (min-width: 600px) {
+    min-height: 92vh;
+  }
 }
 
 .section-titles {
   font-size: 2.5em;
   text-align: center;
-  padding: 7vh 5vw 3vh 5vw;
+  padding: 5vh 5vw;
   text-transform: uppercase;
   font-weight: 600;
   margin: 2vh 0;
@@ -61,17 +63,3 @@ body {
       color: black; 
     }
 }
-
- 
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: "Quicksand", sans-serif;
-// }
-
-
-

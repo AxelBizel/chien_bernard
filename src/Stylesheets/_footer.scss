@@ -7,6 +7,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 600px) {
+      height: 100vh;
+      max-height: 100vh;
+    }
+    @media (min-width: 600px) {
+      height: 92vh;
+      max-height: 92vh;
+    }
   }
 
   .footerRow{
@@ -18,7 +26,7 @@
     align-self: center;
     text-align: center;
     @media (max-width: 600px) {
-      padding-top: 10vh;
+      padding-top: 20px;
     }
   }
   
