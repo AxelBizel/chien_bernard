@@ -2,11 +2,11 @@ import React from "react";
 import GIF from "../Images/header.gif";
 import { Container, Row, Col } from "reactstrap";
 
-const Header = () => {
+const Header = ({ isMobile }) => {
   return (
-    <div className="header">
+    <div className="header" style={{ background: `${GIF}` }}>
       <Container>
-        <div className="header-contents" data-aos="fade-in">
+        <div className="header-contents" data-aos="fade-up">
           <Row className="justify-content-between">
             <Col xs="12">
               <div className="header-img">

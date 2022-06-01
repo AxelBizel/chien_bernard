@@ -11,7 +11,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
-const NavbarComponent = () => {
+const NavbarComponent = ({ isMobile }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -28,14 +28,14 @@ const NavbarComponent = () => {
               <NavLink href="#bio">Bio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#music">Music</NavLink>
+              <NavLink href="#music">Écouter</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#concerts">Concerts</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="#video">Video</NavLink>
+              <NavLink href="#video">Vidéo</NavLink>
             </NavItem>
 
             <NavItem>

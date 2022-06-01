@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,73 +10,65 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Music = () => {
-  const [isMobile, setIsMobile] = useState(null);
-  useEffect(() => {
-    if (window.matchMedia("(max-width: 600px)").matches) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  }, [isMobile]);
-
+const Music = ({ isMobile }) => {
   return (
     <Container>
-      <div data-aos="fade-in">
-        <h2 className="section-titles">Music</h2>
+      <div data-aos="fade-up">
+        <h2 className="section-titles">Écouter</h2>
       </div>
       <Row style={{ marginVertical: "2vh" }}>
-        <Col xs="12" lg="6" data-aos="fade-right">
+        <Col xs="12" lg="6" data-aos={isMobile ? "fade-up" : "fade-right"}>
           <div
             style={{
-              marginRight: "30px",
-              width: "350px",
-              margin: "auto",
+              width: "100%",
+              margin: "15px",
             }}
           >
             <p>
-              <b>Crédits</b>
-              <ul style={{ listStyle: "none" }} title="Crédits">
-                <li>Sortie le 10 mars 2022.</li>
-                <li>
-                  Enregistré live, mixé et masterisé <br />
-                  par Cédric Lerges au Studio Laforge.
-                </li>
-                <li>Artwork by Aurélien Bartolucci</li>
-                <li>Music by Chien Bernard</li>
-              </ul>
+              <b>Félindra</b>
+              <br />
+              <br />
+              Premier album, sortie le 10 mars 2022.
+              <br />
+              Enregistré live, mixé et masterisé <br />
+              par Cédric Lerges au Studio Laforge.
+              <br />
+              Artwork by Aurélien Bartolucci
+              <br />
+              Music by Chien Bernard
+              <br />
             </p>
             <p>
               <b>Tracklist</b>
-              <ul style={{ listStyle: "decimal" }} title="Tracklist">
-                <li>Baballen</li>
-                <li>Piston</li>
-                <li>Felindra</li>
-                <li>Uretrite</li>
-                <li>Come to Aldi</li>
-                <li>La Famille Leroy</li>
-                <li>Du lard</li>
-                <li>Jean-Vincent Placé</li>
-                <li>Flamenclek part.1</li>
-                <li>Flamenclek part.2</li>
-              </ul>
             </p>
+            <ul style={{ listStyle: "decimal" }} title="Tracklist">
+              <li>Baballen</li>
+              <li>Piston</li>
+              <li>Felindra</li>
+              <li>Uretrite</li>
+              <li>Come to Aldi</li>
+              <li>La Famille Leroy</li>
+              <li>Du lard</li>
+              <li>Jean-Vincent Placé</li>
+              <li>Flamenclek part.1</li>
+              <li>Flamenclek part.2</li>
+            </ul>
           </div>
         </Col>
 
-        <Col xs="12" lg="6" data-aos="fade-left">
+        <Col xs="12" lg="6" data-aos={isMobile ? "fade-up" : "fade-left"}>
           <div
             style={{
               display: "flex",
               justifyContent: "center",
-              marginBottom: "30px",
+              marginBottom: "20px",
             }}
           >
             <iframe
               title="Bandcamp"
               style={{
-                width: isMobile ? "320px" : "350px",
-                height: isMobile ? "320px" : "350px",
+                width: isMobile ? "90vw" : "400px",
+                height: isMobile ? "90vw" : "400px",
                 border: 0,
               }}
               src="https://bandcamp.com/EmbeddedPlayer/album=2078108374/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/"
@@ -87,7 +79,9 @@ const Music = () => {
               </a>
             </iframe>
           </div>
-
+          <p style={{ textAlign: "center" }}>
+            <b>Stream now on</b>
+          </p>
           <div
             id="streaming"
             style={{
@@ -95,7 +89,7 @@ const Music = () => {
               flexDirection: "row",
               justifyContent: "space-between",
               marginVertical: "2vh",
-              width: isMobile ? "320px" : "350px",
+              width: isMobile ? "90vw" : "390px",
               margin: "auto",
             }}
           >

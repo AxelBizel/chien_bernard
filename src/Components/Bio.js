@@ -2,17 +2,17 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Band from "../Images/band.jpg";
 
-const Bio = () => {
+const Bio = ({ isMobile }) => {
   return (
     <Container>
-      <div data-aos="fade-in">
+      <div data-aos="fade-up">
         <h2 className="section-titles"> Bio</h2>
       </div>
       <Row>
-        <Col xs="12" lg="6" data-aos="fade-right">
+        <Col xs="12" lg="6" data-aos={isMobile ? "fade-up" : "fade-right"}>
           <img src={Band} alt="band" width="100%" style={{ padding: "10px" }} />
         </Col>
-        <Col xs="12" lg="6" data-aos="fade-left">
+        <Col xs="12" lg="6" data-aos={isMobile ? "fade-up" : "fade-left"}>
           <p style={{ margin: "15px", textAlign: "justify" }}>
             Chien Bernard est un trio formé en 2018 à Lyon par d'ex-membres
             d'Innerty et d'OK FDP. Le groupe pratique un rock noisy et

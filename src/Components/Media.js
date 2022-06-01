@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Container,
   Row,
@@ -16,16 +16,7 @@ import KS from "../Images/Media/koolstrings.jpg";
 import NRU from "../Images/Media/noiserus.jpeg";
 import PRL from "../Images/Media/prl.jpg";
 
-const Media = () => {
-  const [isMobile, setIsMobile] = useState(null);
-  useEffect(() => {
-    if (window.matchMedia("(max-width: 600px)").matches) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  }, [isMobile]);
-
+const Media = ({ isMobile }) => {
   const mediaItems = [
     {
       name: "🇧🇪 Kool Strings",
@@ -84,7 +75,7 @@ const Media = () => {
 
   return (
     <Container>
-      <div data-aos="fade-in">
+      <div data-aos="fade-up">
         <h2 className="section-titles">Media</h2>
       </div>
 
@@ -94,6 +85,7 @@ const Media = () => {
             xs="6"
             md="4"
             lg="3"
+            key={i}
             className="my-2"
             data-aos="flip-left"
             data-aos-duration="500"

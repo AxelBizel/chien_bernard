@@ -6,7 +6,7 @@
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 
     .header-contents {
       display: flex;
@@ -43,7 +43,7 @@
         @media (max-width: 600px) {
           height: auto;
           width:100%;
-          margin: 5vh auto;
+          margin: auto;
         }
         // @media (min-width: 600px) {
         //   margin-left: 5vw;
