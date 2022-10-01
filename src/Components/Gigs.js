@@ -1,38 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import { Carousel } from "react-responsive-carousel";
-
+import { fetchData } from "../utils/fetchData";
 const Gigs = ({ isMobile }) => {
+  const [pastGigs, setPastGigs] = useState(null);
+  const [pics, setPics] = useState(null);
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "//widget.songkick.com/10189571/widget.js";
     script.async = true;
     const widgetDiv = document.getElementById("widgetDiv");
     widgetDiv.appendChild(script);
+    getPastGigs();
+    getPics();
   }, []);
 
-  const pics = [
-    {
-      url: require("../Images/Gigs/JJ3.jpg"),
-      legend: "Jack Jack (Bron) - 20211217",
-    },
-    {
-      url: require("../Images/Gigs/JJ1.jpg"),
-      legend: "Jack Jack (Bron) - 20211217",
-    },
-    {
-      url: require("../Images/Gigs/JJ4.jpg"),
-      legend: "Jack Jack (Bron) - 20211217",
-    },
-    {
-      url: require("../Images/Gigs/JJ5.jpg"),
-      legend: "Jack Jack (Bron) - 20211217",
-    },
-    {
-      url: require("../Images/Gigs/trokson.jpg"),
-      legend: "Trokson (Lyon) - 20220226",
-    },
-  ];
+  const getPastGigs = async () => {
+    const pastGigsRes = await fetchData("PAST_GIGS");
+    setPastGigs(pastGigsRes);
+  };
+
+  const getPics = async () => {
+    const picsData = await fetchData("CAROUSEL");
+    setPics(picsData);
+  };
 
   return (
     <Container>
@@ -54,27 +46,35 @@ const Gigs = ({ isMobile }) => {
           Chien Bernard tour dates
         </a>
       </div>
-
-      <div style={{ margin: 20 }}>
-        <p>
-          <b>Past gigs</b>
-          <br />
-          2022-03-12 - Le Farmer (Lyon) w/ Nevraska & Disordense <br />
-          2022-02-26 - Le Trokson (lyon) <br />
-          2021-12-17 - Jack Jack (Bron) <br />
-        </p>
+      <div data-aos="fade-up">
+        {pics && (
+          <Carousel>
+            {pics.map((p, i) => {
+              return (
+                <div key={`gigpic${i}`}>
+                  <img src={p[0]} alt={p[1]} />
+                  <p className="legend">{p[1]}</p>
+                </div>
+              );
+            })}
+          </Carousel>
+        )}
       </div>
-
-      <Carousel>
-        {pics.map((p, i) => {
-          return (
-            <div key={i}>
-              <img src={p.url} alt={p.legend} />
-              <p className="legend">{p.legend}</p>
-            </div>
-          );
-        })}
-      </Carousel>
+      {pastGigs && (
+        <div style={{ margin: 10 }} data-aos="fade-up">
+          <h5>
+            <b>Concerts passés</b>
+          </h5>
+          <ul style={{ listStyle: "none", padding: 0, listStyleTtype: "none" }}>
+            {pastGigs.map((g, i) => (
+              <li key={i}>
+                <em>{g[0]}</em> - <b>{g[1]}</b> {isMobile && <br />}
+                {g[2]}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </Container>
   );
 };

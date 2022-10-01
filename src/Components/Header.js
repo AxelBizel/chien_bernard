@@ -2,7 +2,7 @@ import React from "react";
 import GIF from "../Images/header.gif";
 import { Container, Row, Col } from "reactstrap";
 
-const Header = ({ isMobile }) => {
+const Header = () => {
   return (
     <div className="header" style={{ background: `${GIF}` }}>
       <Container>

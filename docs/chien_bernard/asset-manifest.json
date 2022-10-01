@@ -1,38 +1,26 @@
 {
   "files": {
     "main.css": "/chien_bernard/static/css/main.6692c203.chunk.css",
-    "main.js": "/chien_bernard/static/js/main.3b1553fc.chunk.js",
-    "main.js.map": "/chien_bernard/static/js/main.3b1553fc.chunk.js.map",
+    "main.js": "/chien_bernard/static/js/main.e96c7457.chunk.js",
+    "main.js.map": "/chien_bernard/static/js/main.e96c7457.chunk.js.map",
     "runtime-main.js": "/chien_bernard/static/js/runtime-main.02fde5be.js",
     "runtime-main.js.map": "/chien_bernard/static/js/runtime-main.02fde5be.js.map",
     "static/css/2.10af0cc3.chunk.css": "/chien_bernard/static/css/2.10af0cc3.chunk.css",
-    "static/js/2.d3cb10ef.chunk.js": "/chien_bernard/static/js/2.d3cb10ef.chunk.js",
-    "static/js/2.d3cb10ef.chunk.js.map": "/chien_bernard/static/js/2.d3cb10ef.chunk.js.map",
+    "static/js/2.7fc41c52.chunk.js": "/chien_bernard/static/js/2.7fc41c52.chunk.js",
+    "static/js/2.7fc41c52.chunk.js.map": "/chien_bernard/static/js/2.7fc41c52.chunk.js.map",
     "index.html": "/chien_bernard/index.html",
-    "precache-manifest.d08b0cc2f866735cf98cff251b4c6efe.js": "/chien_bernard/precache-manifest.d08b0cc2f866735cf98cff251b4c6efe.js",
+    "precache-manifest.a0938248cd93e4d1a0d7433cc5009d15.js": "/chien_bernard/precache-manifest.a0938248cd93e4d1a0d7433cc5009d15.js",
     "service-worker.js": "/chien_bernard/service-worker.js",
     "static/css/2.10af0cc3.chunk.css.map": "/chien_bernard/static/css/2.10af0cc3.chunk.css.map",
     "static/css/main.6692c203.chunk.css.map": "/chien_bernard/static/css/main.6692c203.chunk.css.map",
-    "static/media/JJ1.jpg": "/chien_bernard/static/media/JJ1.ec658179.jpg",
-    "static/media/JJ3.jpg": "/chien_bernard/static/media/JJ3.d163ea62.jpg",
-    "static/media/JJ4.jpg": "/chien_bernard/static/media/JJ4.06a093ba.jpg",
-    "static/media/JJ5.jpg": "/chien_bernard/static/media/JJ5.ae715dc2.jpg",
-    "static/media/absoluteworstshow.jpg": "/chien_bernard/static/media/absoluteworstshow.25eecf29.jpg",
-    "static/media/band.jpg": "/chien_bernard/static/media/band.f50a9305.jpg",
     "static/media/main.scss": "/chien_bernard/static/media/bg.75464ee5.jpg",
-    "static/media/broke_the_casbah.jpg": "/chien_bernard/static/media/broke_the_casbah.4b8e247d.jpg",
-    "static/media/header.gif": "/chien_bernard/static/media/header.2a60dc83.gif",
-    "static/media/kfuel.jpg": "/chien_bernard/static/media/kfuel.cd1f18f1.jpg",
-    "static/media/koolstrings.jpg": "/chien_bernard/static/media/koolstrings.86b6ab40.jpg",
-    "static/media/noiserus.jpeg": "/chien_bernard/static/media/noiserus.2ef61b7a.jpeg",
-    "static/media/prl.jpg": "/chien_bernard/static/media/prl.7dd37ce7.jpg",
-    "static/media/trokson.jpg": "/chien_bernard/static/media/trokson.533f4348.jpg"
+    "static/media/header.gif": "/chien_bernard/static/media/header.2a60dc83.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.02fde5be.js",
     "static/css/2.10af0cc3.chunk.css",
-    "static/js/2.d3cb10ef.chunk.js",
+    "static/js/2.7fc41c52.chunk.js",
     "static/css/main.6692c203.chunk.css",
-    "static/js/main.3b1553fc.chunk.js"
+    "static/js/main.e96c7457.chunk.js"
   ]
 }
