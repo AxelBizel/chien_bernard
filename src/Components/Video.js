@@ -18,7 +18,6 @@ const Video = ({ isMobile }) => {
           frameborder="none"
         />
       </div>
-      </div>
       <div className="videoWrapper" data-aos="fade-up">
         <iframe
           width="100%"
