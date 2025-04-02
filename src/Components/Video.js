@@ -18,6 +18,18 @@ const Video = ({ isMobile }) => {
           frameborder="none"
         />
       </div>
+      </div>
+      <div className="videoWrapper" data-aos="fade-up">
+        <iframe
+          width="100%"
+          height={isMobile ? "240" : "500"}
+          src="https://www.youtube.com/embed/JR7UnsysDck"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          frameborder="none"
+        />
+      </div>
     </Container>
   );
 };
